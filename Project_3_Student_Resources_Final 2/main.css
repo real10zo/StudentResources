@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;    
+}
+
+body {
+    width:100%;
+}
+
+main {
+    width:90%;
+    margin: 0 auto;
+    max-width: 1100px;
+    
+}
+
+a {
+  color: orangered;
+}
+
+/* header */
+
+.header {
+/*
+  display:flex;
+  justify-content: space-between;
+*/
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position:fixed;
+  width: 100%;
+  z-index: 3;
+  font-family: 'roboto', sans-serif;
+  box-sizing: border-box;
+  height:80px;
+}
+
+.behindheader {
+    height:80px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo{
+  display: inline-block;
+  float: left;
+  font-size: 2em;
+    padding-left: 5%;
+  padding-top: 20px;
+  text-decoration: none;
+}
+
+
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 38px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+.quote {
+    height:200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    background-color: black;
+    font-family: 'roboto', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.container{
+    width:100%;
+    margin:0 auto;
+  
+    font-size: 18px;
+  
+    font-family: 'roboto', sans-serif;
+}
+
+
+
+/*if choose fixed parallex background*/
+/*index*/
+
+.parallax1{
+    background: url('images/naassom-azevedo-Q_Sei-TqSlc-unsplash%20copy.jpg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    width:100%;
+    height:500px;
+}
+
+.parallax2{
+    background: url('images/mask.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+
+.parallax3{
+    background: url('images/fusion-medical-animation-EAgGqOiDDMg-unsplash.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+.parallax16{
+    background: url('images/statistics.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+.parallax17{
+    background: url('images/Corona.png') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+
+/*health*/
+.parallax4 {
+    background: url('images/girlstress.jpg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    width:100%;
+    height:700px;
+}
+
+.parallax5{
+    background: url('images/breathe.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+.parallax6{
+    background: url('images/handwash.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+.parallax7{
+    background: url('images/sick2.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+.parallax8{
+    background: url('images/phone.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+/*financial*/
+
+
+
+
+.parallax9 {
+    background: url('images/student2.jpg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    width:100%;
+    height:700px;
+}
+
+.parallax10{
+    background: url('images/bank.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+.parallax11{
+    background: url('images/barista.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+.parallax12{
+    background: url('images/resturant.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+.parallax13{
+    background: url('images/califlag.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+
+/*academic*/
+
+.parallax21 {
+    background: url('images/banana.jpg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    width:100%;
+    height:700px;
+}
+
+.parallax22{
+    background: url('images/foodstmp.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+.parallax23{
+    background: url('images/food.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+.parallax24{
+    background: url('images/hands.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+.parallax25{
+    background: url('images/usda.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+
+
+/*shelter*/
+
+.parallax14 {
+    background: url('images/studenthomeless.jpg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    width:100%;
+    height:700px;
+}
+
+
+.parallax15{
+    background: url('images/locked.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+.parallax18{
+    background: url('images/women.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+.parallax19{
+    background: url('images/bed.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+.parallax20{
+    background: url('images/uhual.jpg') no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: 700px;
+}
+
+.link {
+    color: white;
+}
+
+
+h3{
+/*
+    margin-top: 3%;
+    margin-bottom: 3%;
+*/
+
+    font-weight: 700;
+    text-align: center;
+}
+
+p{
+    padding: 2% 2%;
+    margin-bottom: 3%;
+    font-weight: 300;
+}
+
+
+.box2 {
+
+    width:100%;
+    background-color: black;
+    padding: 5% 4%; 
+    color: white;
+}
+
+.box {
+    width:100%
+    background-color: white;
+   
+
+}
+
+.box3 {
+    width:100%
+    background-color: white;
+    padding: 5% 4%; 
+
+}
+
+.textbox {
+    padding: 30px 0;
+}
+
+.logo {
+    color: black;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    
+    main {
+    width:100%;
+    }
+
+    .parallax1, .parallax2, .parallax3, .parallax4, .parallax5, .parallax6, .parallax7, .parallax8, .parallax8, .parallax9, .parallax10, .parallax11, .parallax12, .parallax13, .parallax14, .parallax15, .parallax16, .parallax17, .parallax18, .parallax19, .parallax20, .parallax21, .parallax22, .parallax23, .parallax24, .parallax25 {
+
+        background-attachment: scroll;
+        height: 350px;
+    
+    }
+
+
+    .quote {
+    font-size: 10px;
+}
+    
+
+    .container{
+/*        max-width:1000px;*/
+        margin:0 auto;
+        background: #f9f9f9;
+        font-size: 12px;
+        padding: 0px;
+        font-family: 'roboto', sans-serif;
+    }
+
+
+
+  
+
+    
+        .box2 {
+        background-color: black;
+        padding: 5%;
+        color: white;
+        }
+
+        .box {
+        padding: 5%;
+        }
